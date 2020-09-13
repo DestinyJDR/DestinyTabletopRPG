@@ -1,0 +1,3072 @@
+<div class="sheet-overall-wrapper" style="margin-bottom:800px;">
+    <img src="https://www.destinyjdr.com/img/destinyjdrbanner.png" style="margin:-30px;margin-top:-16px;padding:-20px;overflow: hidden;text-align:center;max-width:105%;">
+	<!-- PC / NPC toggle -->
+	<div class="sheet-core-header sheet-padb">
+		<div class="sheet-row" style="margin:20px;">
+			<div class="sheet-col-1-4 sheet-small-label sheet-center" style="margin-right:8px;">
+				<input class="sheet-underlined sheet-center" type="text" name="attr_character_name">
+				<br/>Nom du Gardien</div>
+			<div class="sheet-col-1-4 sheet-small-label sheet-center" style="margin-left:8px;margin-right:8px;">
+				<input class="sheet-underlined sheet-center" type="text" name="attr_player_name">
+				<br/>Prénom du Joueur</div>
+			<div class="sheet-col-1-5 sheet-small-label sheet-center" style="margin-left:8px;margin-right:8px;">
+				<input class="sheet-underlined sheet-center" type="text" name="attr_race">
+				<br/>Race</div>
+		    <div class="sheet-col-1-5 sheet-small-label sheet-center" style="margin-left:8px;margin-right:8px;">
+				<input class="sheet-underlined sheet-center" type="text" name="attr_class">
+				<br/>Classe</div>
+		</div>
+	</div>
+	<div class="sheet-row" style="margin-top:-18px;">
+		<div class="sheet-col-1-4 sheet-small-label sheet-center" style="margin-right:8px;">
+			<input class="sheet-underlined sheet-center" type="text" name="attr_doctrine">
+			<br/>Doctrine</div>
+		<div class="sheet-col-1-10 sheet-small-label sheet-center" style="margin-left:8px;margin-right:8px;">
+			<input class="sheet-underlined sheet-center" type="text" name="attr_size">
+			<br/>Taille</div>
+		<div class="sheet-col-1-10 sheet-small-label sheet-center" style="margin-left:8px;margin-right:8px;">
+			<input class="sheet-underlined sheet-center" type="text" name="attr_sex">
+			<br/>Sexe</div>
+		<div class="sheet-col-1-10 sheet-small-label sheet-center" style="margin-left:8px;margin-right:8px;">
+			<input class="sheet-underlined sheet-center" type="text" name="attr_age">
+			<br/>Age Approx.</div>
+		<div class="sheet-col-1-10 sheet-small-label sheet-center" style="margin-left:8px;margin-right:8px;">
+			<input class="sheet-underlined sheet-center" type="text" name="attr_weight">
+			<br/>Poids</div>
+		<div class="sheet-col-1-10 sheet-small-label sheet-center" style="margin-left:8px;margin-right:8px;">
+			<input class="sheet-underlined sheet-center" type="text" name="attr_colorEyes">
+			<br/>Yeux</div>
+	    <div class="sheet-col-1-10 sheet-small-label sheet-center" style="margin-left:8px;margin-right:8px;">
+			<input class="sheet-underlined sheet-center" type="text" name="attr_colorHair">
+			<br/>Cheveux</div>
+	</div>
+	<br/>
+	<div class="sheet-row" style="margin-left:-3%;">
+		<div class="sheet-col-1-10 sheet-normal-label sheet-center" style="color:orange!important;">
+			<button type="roll" class="sheet-basic-button" name="roll_CC" style="margin-left:-4px;color:orange!important;" value="&{template:5eDefault} {{title=Jet de Capacité de Combat}} {{subheader=@{character_name}}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191 ]]}}">CC</button>
+			<input class="sheet-underlined" type="number" name="attr_CC" style="font-size:19px;!important;">
+		    <br/>
+			<input type="checkbox" value="@{PB}" name="attr_attr1cc" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr2cc" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr3cc" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr4cc" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr5cc" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr6cc" style="margin:-3px!important;margin-top:-18px;">
+		</div>
+		<div class="sheet-col-1-10 sheet-normal-label sheet-center" style="color:rgb(126,87,48)!important;">
+			<button type="roll" class="sheet-basic-button" name="roll_CT" style="margin-left:-4px;color:rgb(126,87,48);" value="&{template:5eDefault} {{title=Jet de Capacité de Tir}} {{subheader=@{character_name}}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191 ]]}}">CT</button>
+			<input class="sheet-underlined" type="number" name="attr_CT" style="font-size:19px;!important;">
+		    <br/>
+			<input type="checkbox" value="@{PB}" name="attr_attr1ct" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr2ct" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr3ct" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr4ct" style="margin:-4px!important;margin-top:-19px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr5ct" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr6ct" style="margin:-3px!important;margin-top:-18px;">
+		</div>
+		<div class="sheet-col-1-10 sheet-normal-label sheet-center" style="color:red!important;">
+			<button type="roll" class="sheet-basic-button" name="roll_F" style="margin-left:-4px;color:red;" value="&{template:5eDefault} {{title=Jet de Force}} {{subheader=@{character_name}}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191 ]]}}">F</button>
+			<input class="sheet-underlined" type="number" name="attr_F" style="font-size:19px;!important;">
+		    <br/>
+			<input type="checkbox" value="@{PB}" name="attr_attr1f" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr2f" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr3f" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr4f" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr5f" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr6f" style="margin:-4px!important;margin-top:-19px;">
+		</div>
+		<div class="sheet-col-1-10 sheet-normal-label sheet-center" style="color:rgb(97,215,104)!important;">
+			<button type="roll" class="sheet-basic-button" name="roll_DEX" style="margin-left:-4px;color:rgb(97,215,104);" value="&{template:5eDefault} {{title=Jet de Dextérité}} {{subheader=@{character_name}}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191 ]]}}">DEX</button>
+			<input class="sheet-underlined" type="number" name="attr_DEX" style="font-size:19px;!important;">
+		    <br/>
+			<input type="checkbox" value="@{PB}" name="attr_attr1dex" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr2dex" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr3dex" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr4dex" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr5dex" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr6dex" style="margin:-3px!important;margin-top:-18px;">
+		</div>
+		<div class="sheet-col-1-10 sheet-normal-label sheet-center" style="color:rgb(80,80,253)!important;">
+			<button type="roll" class="sheet-basic-button" name="roll_RES" style="margin-left:-4px;color:rgb(80,80,253);" value="&{template:5eDefault} {{title=Jet de Résistance}} {{subheader=@{character_name}}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191 ]]}}">RES</button>
+			<input class="sheet-underlined" type="number" name="attr_RES" style="font-size:19px;!important;">
+		    <br/>
+			<input type="checkbox" value="@{PB}" name="attr_attr1res" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr2res" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr3res" style="margin:-4px!important;margin-top:-19px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr4res" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr5res" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr6res" style="margin:-3px!important;margin-top:-18px;">
+		</div>
+		<div class="sheet-col-1-10 sheet-normal-label sheet-center" style="color:rgb(191,97,254)!important;">
+			<button type="roll" class="sheet-basic-button" name="roll_INT" style="margin-left:-4px;color:rgb(191,97,254);" value="&{template:5eDefault} {{title=Jet d'Intelligence}} {{subheader=@{character_name}}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191 ]]}}">INT</button>
+			<input class="sheet-underlined" type="number" name="attr_INT" style="font-size:19px;!important;">
+		    <br/>
+			<input type="checkbox" value="@{PB}" name="attr_attr1int" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr2int" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr3int" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr4int" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr5int" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr6int" style="margin:-4px!important;margin-top:-19px;">
+		</div>
+		<div class="sheet-col-1-10 sheet-normal-label sheet-center" style="color:gray!important;">
+			<button type="roll" class="sheet-basic-button" name="roll_PER" style="margin-left:-4px;color:gray;" value="&{template:5eDefault} {{title=Jet de Perception}} {{subheader=@{character_name}}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191 ]]}}">PER</button>
+			<input class="sheet-underlined" type="number" name="attr_PER" style="font-size:19px;!important;">
+		    <br/>
+			<input type="checkbox" value="@{PB}" name="attr_attr1per" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr2per" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr3per" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr4per" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr5per" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr6per" style="margin:-3px!important;margin-top:-18px;">
+		</div>
+		<div class="sheet-col-1-10 sheet-normal-label sheet-center" style="color:rgb(235,145,255)!important;">
+			<button type="roll" class="sheet-basic-button" name="roll_FM" style="margin-left:-4px;color:rgb(235,145,255);" value="&{template:5eDefault} {{title=Jet de Force Mentale}} {{subheader=@{character_name}}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191 ]]}}">FM</button>
+			<input class="sheet-underlined" type="number" name="attr_FM" style="font-size:19px;!important;">
+		    <br/>
+			<input type="checkbox" value="@{PB}" name="attr_attr1fm" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr2fm" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr3fm" style="margin:-4px!important;margin-top:-19px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr4fm" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr5fm" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr6fm" style="margin:-3px!important;margin-top:-18px;">
+		</div>
+		<div class="sheet-col-1-10 sheet-normal-label sheet-center" style="color:rgb(240,219,58)!important;">
+			<button type="roll" class="sheet-basic-button" name="roll_CH" style="margin-left:-4px;color:rgb(240,219,58);" value="&{template:5eDefault} {{title=Jet de Charisme}} {{subheader=@{character_name}}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191 ]]}}">CH</button>
+			<input class="sheet-underlined" type="number" name="attr_CH" style="font-size:19px;!important;">
+		    <br/>
+			<input type="checkbox" value="@{PB}" name="attr_attr1ch" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr2ch" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr3ch" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr4ch" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr5ch" style="margin:-4px!important;margin-top:-19px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr6ch" style="margin:-3px!important;margin-top:-18px;">
+		</div>
+		<div class="sheet-col-1-10 sheet-normal-label sheet-center" style="color:rgb(99,149,78)!important;">
+			<button type="roll" class="sheet-basic-button" name="roll_TEC" style="margin-left:-4px;color:rgb(99,149,78);" value="&{template:5eDefault} {{title=Jet de Technologie}} {{subheader=@{character_name}}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191 ]]}}">TEC</button>
+			<input class="sheet-underlined" type="number" name="attr_TEC" style="font-size:19px;!important;">
+		    <br/>
+			<input type="checkbox" value="@{PB}" name="attr_attr1tec" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr2tec" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr3tec" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr4tec" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr5tec" style="margin:-3px!important;margin-top:-18px;">
+			<input type="checkbox" value="@{PB}" name="attr_attr6tec" style="margin:-3px!important;margin-top:-18px;">
+		</div>
+	</div>
+	
+	<div class="sheet-player" style="margin-bottom:10px;margin-top:15px;">
+		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Core Stats" checked="checked" style="margin-left:94px;"/>
+		<span class="sheet-tab sheet-tab1">Gardien</span>
+		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" />
+		<span class="sheet-tab sheet-tab2">Capacités</span>
+		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3" />
+		<span class="sheet-tab sheet-tab3">Allégeance</span>
+		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab4" value="4" />
+		<span class="sheet-tab sheet-tab4">Equipement</span>
+		<span class="sheet-spacer"></span>
+		<div class="sheet-section-core" style="margin-top:10px;">
+			<div class="sheet-row">
+				<div class="sheet-col-1-2 sheet-padr">
+					<h4 class="sheet-center">Gardien</h4>
+					<div class="sheet-row sheet-sub-header">
+						<div class="sheet-col-1-2 sheet-center sheet-small-label">
+						    Points de Vie
+						</div>
+						<div class="sheet-col-1-2 sheet-center sheet-small-label">
+						    Points de Destin
+						</div>
+					</div>
+					<div class="sheet-col-1-2 sheet-padr sheet-border-right">
+						<div class="sheet-row">
+							<div class="sheet-col-1-3 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_PVTotal" step="1">
+								<br/>Total
+							</div>
+							<div class="sheet-col-1-3 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_PVActuels" min="1" step="1">
+								<br/>Actuels
+							</div>
+							<div class="sheet-col-1-3 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_BC" min="1" step="1" style="color:red;">
+								<br/>Blessures Critiques
+							</div>
+						</div>
+					</div>
+    				<div class="sheet-col-1-20 sheet-padl sheet-small-label sheet-center">
+    					&nbsp;
+    				</div>
+    				<div class="sheet-col-1-6 sheet-padl sheet-small-label sheet-center">
+    					<input class="sheet-underlined" type="number" name="attr_PDDTotal" step="1">
+    					<br/>Total
+    				</div>
+    				
+    				<div class="sheet-col-1-6 sheet-padl sheet-small-label sheet-center">
+    					<input class="sheet-underlined" type="number" name="attr_PDDActuels" step="1">
+    					<br/>Actuel
+    				</div>
+    				<div class="sheet-col-2-3 sheet-padr" style="margin-top:15px;">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_PDF" step="1">
+								<br/>Points de Fatigue
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_PDS" min="1" step="1" style="color:#00e6e6;">
+								<br/>Points de Super
+							</div>
+						</div>
+					</div>
+			    	<div class="sheet-col-1-3 sheet-padl sheet-center" style="margin-top:15px;margin-left:-26px;">
+        				<div class="sheet-row">
+							<div class="sheet-col-1 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_Lumens" step="1">
+								<br/>Lumens
+							</div>
+						</div>
+        			</div>
+					<h4 class="sheet-center" style="margin-top:20px;">Spectre</h4>
+					<img src="https://www.destinyjdr.com/img/6414372.png" style="text-align:center;max-width:105%;">
+					<div class="sheet-col-1-2 sheet-padr">
+						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+							Nom du Spectre
+							<input class="sheet-underlined" type="text" name="attr_GName" step="1">
+						</div>
+						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+							Caractère
+							<input class="sheet-underlined" type="text" name="attr_GCar" step="1">
+						</div>
+						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+							Coque
+							<input class="sheet-underlined" type="text" name="attr_GCoque" step="1">
+						</div>
+						<div class="sheet-col-1-3 sheet-padl sheet-small-label sheet-center" style="margin-left:-5px;margin-top:4px;">
+							<br/>PV MAX
+			                <input class="sheet-underlined sheet-center" type="number" name="attr_GPVMax">
+						</div>
+						<div class="sheet-col-1-3 sheet-padl sheet-small-label sheet-center" style="margin-left:-5px;margin-top:4px;">
+							<br/>PV Act.
+			                <input class="sheet-underlined sheet-center" type="number" name="attr_GPV">
+						</div>
+						<div class="sheet-col-1-3 sheet-normal-label sheet-center" style="margin-left:-1px;font-size:12px!important;color:rgb(80,80,253)!important;margin-top:-16px;">
+							<br/>RES
+			                <input class="sheet-underlined sheet-center" type="number" name="attr_GRes" style="margin-top:-8px;">
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr" style="margin-top:10px;">
+						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+						    <br/>Bonus de la Coque
+							<input class="sheet-underlined" type="text" name="attr_GBonus" step="1">
+						</div>
+					</div>
+					<h4 class="sheet-center" style="margin-top:20px;">Lore</h4>
+					<div class="sheet-col-1-1 sheet-padr" style="margin-top:6px;">
+						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+						    Personnalité
+						    <textarea class="sheet-underlined" type="text" name="attr_LPerso" style="height:58;"></textarea>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+						    Passé
+						    <textarea class="sheet-underlined" type="text" name="attr_LPast" style="height:58px;"></textarea>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+						    Signe Distinctif
+						    <textarea class="sheet-underlined" type="text" name="attr_LDistinct" style="height:40px;"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="sheet-col-1-2 sheet-padr">
+					<h4 class="sheet-center">Connaissances</h4>
+				    <!-- L'Avant-Garde -->
+					<div class="sheet-row">
+						<div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn1" value="L'Avant-Garde" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn1-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn1-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn1-3" value="@{PB}" />
+						</div>
+					</div>
+				    <!-- La Dernière Cité -->
+					<div class="sheet-row">
+						<div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn2" value="La Dernière Cité" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn2-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn2-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn2-3" value="@{PB}" />
+						</div>
+					</div>
+				    <!-- Eliksni -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn3" value="Eliksni" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn3-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn3-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn3-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Lumière et Ténèbres -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn4" value="Lumière et Ténèbres" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn4-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn4-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn4-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Gardiens -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn5" value="Gardiens" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn5-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn5-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn5-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Humains -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn6" value="Humains" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn6-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn6-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn6-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Éveillés -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn7" value="Éveillés" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn7-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn7-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn7-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Exos -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn8" value="Exos" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn8-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn8-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn8-3" value="@{PB}" />
+						</div>
+					</div>
+				    <!-- Symboles -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn9" value="Symboles" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn9-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn9-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn9-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Véhicules -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn10" value="Véhicules" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn10-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn10-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn10-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Mythes et Légendes -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn11" value="Mythes et Légendes" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn11-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn11-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn11-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Armes et Armatures -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn12" value="Armes et Armatures" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn12-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn12-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn12-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Marché Noir -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn13" value="Marché Noir" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn13-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn13-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn13-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Vex -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn14" value="Vex" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn14-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn14-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn14-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Cabals -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn15" value="Cabals" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn15-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn15-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn15-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Esprits Tutélaires -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn16" value="Esprits Tutélaires" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn16-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn16-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn16-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Âge d'Or -->
+					<div class="sheet-row">
+						<div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn17" value="Âge d'Or" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn17-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn17-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn17-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Âge Noir -->
+					<div class="sheet-row">
+						<div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn18" value="Âge Noir" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn18-1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn18-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn18-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- La Ruche -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn19" value="Conn. Interdites - La Ruche" style="text-align:center;color: #337e23;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn19-1" value="@{PB}" disabled style="background-color: #0c520d;border-color: black;"/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn19-2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn19-3" value="@{PB}" />
+						</div>
+					</div>
+					<!-- Le Malheur -->
+					<div class="sheet-row">
+					    <div class="sheet-col-1-8">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-2">
+							<input type="text" name="attr_conn20" value="Conn. Interdites - Le Malheur" style="text-align:center;color: #337e23;" readonly/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn20-1" value="@{PB}" disabled style="background-color: #0c520d;border-color: black;"/>
+						</div>
+						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn20-2" value="@{PB}" disabled style="background-color: #0c520d;border-color: black;"/>
+						</div>
+						<div class="sheet-col-1-9 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_conn20-3" value="@{PB}"/>
+						</div>
+					</div>
+					<div class="sheet-row sheet-sub-header">
+						<div class="sheet-col-1-8 sheet-center sheet-small-label">&nbsp;</div>
+						<div class="sheet-col-1-8 sheet-center sheet-small-label">&nbsp;</div>
+						<div class="sheet-col-1-4 sheet-center sheet-small-label">Nom</div>
+						<div class="sheet-col-1-8 sheet-center sheet-small-label">&nbsp;</div>
+						<div class="sheet-col-1-8 sheet-center sheet-small-label">Normale</div>
+						<div class="sheet-col-1-8 sheet-center sheet-small-label">Avancée</div>
+						<div class="sheet-col-1-8 sheet-center sheet-small-label">Expert</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sheet-section-skills" style="margin-top:10px;">
+			<div class="sheet-row">
+			    <img src="https://destinyjdr.com/img/capacites.png" style="margin:-30px;margin-top:1px;padding:-20px;overflow: hidden;text-align:center;max-width:105%;">
+				<div class="sheet-col-1-2 sheet-padr">
+					<h4 class="sheet-center">Super</h4>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-6 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-2-3 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_super1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-6 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+						</div>
+						<div class="sheet-row">
+							<div class="sheet-col-1-6 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-2-3 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_super2" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-6 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+						</div>
+					</div>
+				    <h4 class="sheet-center" style="margin-top:20px;">Expérience</h4>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-7 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-3 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_expT" step="1">
+								<br/>Total
+							</div>
+							<div class="sheet-col-1-20 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-3 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_expA" min="1" step="1">
+								<br/>Restant
+							</div>
+						</div>
+					</div>
+				    <h4 class="sheet-center" style="margin-top:20px;">Compétences</h4>
+					<div class="sheet-row sheet-sub-header">
+						<div class="sheet-col-1-2 sheet-center sheet-small-label">
+						    Classe
+						</div>
+						<div class="sheet-col-1-2 sheet-center sheet-small-label">
+						    Doctrine
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<button type="roll" class="sheet-roll-dmg" name="roll_dodge" value="&{template:5eDefault} {{ability=1}} {{character_name=@{PC Macros|character_name}}} {{title=Esquive}} {{subheader=Jet de Dextérité Accessible (+10)}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191 - 10]] }}">&nbsp;Esquive</button>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_doc1" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-4 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_barriPV" min="1" step="1">
+								<br/>PV Barricade
+							</div>
+							<div class="sheet-col-1-4 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_barriTour" min="1" step="1">
+								<br/>Tours Restants
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_doc2" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<button type="roll" class="sheet-roll-dmg" name="roll_rift" value="&{template:5eDefault} {{weapon=1}} {{character_name=@{PC Macros|character_name}}} {{title=Invocation de Faille}} {{subheader=Jet d'Intelligence}} {{rollname=Résultat}} {{roll=[[ 1d200cs<10cf>191]] }}">&nbsp;Faille Renforçante</button>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-14px;">
+								<input class="sheet-underlined" type="text" name="attr_doc3" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-12px;">
+								<input class="sheet-underlined" type="text" name="attr_doc4" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_doc5" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-row sheet-sub-header">
+						<div class="sheet-col-1 sheet-center sheet-small-label">
+						    Lumineuse
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-4 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_lumi" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-4 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+						</div>
+					</div>
+				    <h4 class="sheet-center" style="margin-top:20px;">Défauts & Mutations</h4>
+					<div class="sheet-row sheet-sub-header">
+						<div class="sheet-col-1 sheet-center sheet-small-label">
+						    Défauts
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_def1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_def2" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-row sheet-sub-header">
+						<div class="sheet-col-1 sheet-center sheet-small-label">
+						    Mutations
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_mut1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_mut2" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+                </div>
+				<div class="sheet-col-1-2 sheet-padr">
+					<h4 class="sheet-center">Talents</h4>
+					<div class="sheet-row sheet-sub-header">
+						<div class="sheet-col-1-2 sheet-center sheet-small-label">
+						    Liés
+						</div>
+						<div class="sheet-col-1-2 sheet-center sheet-small-label">
+						    Non-Liés
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_li1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli1" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_li2" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli2" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_li3" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli3" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_li4" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli4" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_li5" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli5" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-row">
+						<div class="sheet-sub-header sheet-col-1-2 sheet-center sheet-small-label">
+						    Classe
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_cla" min="1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-18px;">
+								<input class="sheet-underlined" type="text" name="attr_nli6" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-row">
+						<div class="sheet-sub-header sheet-col-1-2 sheet-center sheet-small-label">
+						    Doctrine
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_doctri" min="1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-36px;">
+								<input class="sheet-underlined" type="text" name="attr_nli7" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-row">
+						<div class="sheet-sub-header sheet-col-1-2 sheet-center sheet-small-label">
+						    Lumineuse
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_talLumi" min="1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-54px;">
+								<input class="sheet-underlined" type="text" name="attr_nli8" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-row">
+						<div class="sheet-sub-header sheet-col-1-2 sheet-center sheet-small-label">
+						    Puissance du Voyageur
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-8 sheet-padl sheet-small-label sheet-center" style="margin-top:-46px;">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-4 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_puissanceduv" min="1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-8 sheet-padl sheet-small-label sheet-center" style="margin-top:-36px;">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-73px;">
+								<input class="sheet-underlined" type="text" name="attr_nli9" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-73px;">
+								<input class="sheet-underlined" type="text" name="attr_nli10" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-60px;">
+								<input class="sheet-underlined" type="text" name="attr_nli11" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-47px;">
+								<input class="sheet-underlined" type="text" name="attr_nli12" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-34px;">
+								<input class="sheet-underlined" type="text" name="attr_nli13" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-22px;">
+								<input class="sheet-underlined" type="text" name="attr_nli14" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli15" min="1" step="1" style="margin-top:-10px;">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli16" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli17" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli18" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli19" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli20" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli21" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli22" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_nli23" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sheet-section-class">
+		    <img src="https://destinyjdr.com/img/equipement.png" style="margin:-30px;margin-top:1px;margin-bottom:0px;padding:-20px;overflow: hidden;text-align:center;max-width:105%;">
+			<div class="sheet-row">
+				<div class="sheet-col-1-2 sheet-padr">
+					<h4 class="sheet-center">Armes</h4>
+
+            		<div class="sheet-npc-row" style="margin-top:2px;">
+            			<div class="sheet-row" style="margin-top:3px;">
+            			    <div class="sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            				<div class="sheet-col-1-3 sheet-center sheet-small-label sheet-vert-bottom">Nom de l'Arme</div>
+            			    <div class="sheet-col-1-13 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            			    <div class="sheet-col-1-4 sheet-center sheet-small-label sheet-vert-bottom">Type</div>
+            				
+            			</div>
+            			<div class="sheet-row" style="margin-left:24px;">
+            				<div class="sheet-col-3-7 sheet-center">
+            					<input type="text" class="sheet-center" name="attr_weap1">
+            				</div>
+            				<div class="sheet-col-1-3" style="margin-left:4px;">
+            					<select name="attr_weapType1">
+            						<option value="Fusil Automatique" selected="selected">Fusil Automatique</option>
+            						<option value="Pistolet-Mitrailleur">Pistolet-Mitrailleur</option>
+            						<option value="Fusil d'Éclaireur">Fusil d'Éclaireur</option>
+            						<option value="Fusil à Pompe">Fusil à Pompe</option>
+            						<option value="Fusil à Impulsion">Fusil à Impulsion</option>
+            						<option value="Fusil de Précision">Fusil de Précision</option>
+            						<option value="Pistolet">Pistolet</option>
+            						<option value="Revolver">Revolver</option>
+            						<option value="Fusil à Fusion">Fusil à Fusion</option>
+            						<option value="Épée">Épée</option>
+            						<option value="Lance-Grenades">Lance-Grenades</option>
+            						<option value="Mitrailleuse">Mitrailleuse</option>
+            						<option value="Lance-Roquettes">Lance-Roquettes</option>
+            						<option value="Arc">Arc</option>
+            					</select>
+            				</div>
+        					<div class="sheet-col-1-6 sheet-padr" style="margin-left:6px;margin-top:-31px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center" style="margin-left:-12px;">
+        						    <br/>Portée
+        							<input type="number" name="attr_weapRange1" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+            			</div>
+            			<div class="sheet-row" style="margin-left:-14px;margin-top:-10px;margin-bottom:-4px;">
+        					<div class="sheet-col-3-5 sheet-padr" style="margin-left:13px;">
+        						<div class="sheet-col-1-1 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center">
+        						    <br/>Dégâts de l'Arme<br/>
+            						<div class="sheet-col-1-7 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center" style="margin-left:-14px;margin-right:-14px;">
+            							<input type="text" name="attr_weapDamageBigNum1" step="1" style="text-align:center;">
+            						</div>
+            						<div class="sheet-col-1-4 sheet-vert-bottom sheet-padl sheet-center">
+                    					<select name="attr_weapDamageBig1">
+                    						<option value="d4cs5cf0" selected="selected">d4</option>
+                    						<option value="d6cs6cf0">d6</option>
+                    						<option value="d10cs10cf0">d10</option>
+                    						<option value="d20cs20cf0">d20</option>
+                    					</select>
+            						</div>
+            						<div class="sheet-col-2-3 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center" style="margin-left:-14px;">
+            							<input type="text" name="attr_weapDamageElse1" step="1" style="text-align:center;">
+            						</div>
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-left:-14px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Pénétra.
+        							<input type="number" name="attr_weapPene1" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-6 sheet-padr">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center" style="margin-left:-12px;">
+        						    <br/>Dég.Crit
+        							<input type="text" name="attr_weapCrit1" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+                        </div>
+                        <div class="sheet-row">
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Rareté
+                					<select name="attr_weapRarity1">
+                						<option value="weapon1" selected="selected">Usée</option>
+                						<option value="weapon2" style="color: #479cff;">Bonne Qualité</option>
+                						<option value="weapon" style="color: purple;">Qualité Exceptio.</option>
+                						<option value="spell" style="color: purple;font-weight:bold;">Chef d'Oeuvre</option>
+                						<option value="deathsave" style="color: orange;font-weight:bold;">Exotique</option>
+                						<option value="ability" style="color: green;font-weight:bold;">???</option>
+                						<option value="save" style="color: cyan;font-weight:bold;">???</option>
+                					</select>
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Chargeur
+        							<input type="number" name="attr_weapChar1" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Balles Res.
+        							<input type="number" name="attr_weapBallr1" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+            				<div class="sheet-col-1-5 sheet-center" style="margin-top:28px;">
+            					<button type="roll" class="sheet-roll-dmg" name="roll_WeapAttack1" value="&{template:5eDefault} {{@{weapRarity1}=1}} {{character_name=@{PC Macros|character_name}}} {{title=@{weap1}}} {{subheader=@{weapType1}}} {{attack=[[ @{weapDamageBigNum1}@{weapDamageBig1} ]]}} {{attackadv=[[@{weapDamageElse1}]]}} {{critdamage=[[@{weapCrit1}cs999cf0]]}} {{damage=@{weapPene1}}} {{rollname=Talent}} {{roll=@{weapPerk1}}} {{freetext=@{description1}}}">&nbsp;Dégâts</button>
+            				</div>
+            				
+            				<div class="sheet-col-1 sheet-padr" style="margin-top:7px;">
+        						<div class="sheet-row">
+        							<div class="sheet-col-1-10 sheet-padl sheet-small-label sheet-center">
+        								&nbsp;
+        							</div>
+        							<div class="sheet-col-1-4 sheet-padl sheet-small-label sheet-center">
+        								Nom du Talent
+        							</div>
+        							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-6px;">
+        								<input type="text" name="attr_weapPerk1" min="1" step="1">
+        							</div>
+        						</div>
+        					</div>
+            				
+        					<div class="sheet-col-1-1 sheet-padr">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+                					<textarea class="sheet-small-textarea" name="attr_description1"></textarea>
+        						</div>
+        					</div>
+            			</div>
+            		</div>
+            		
+           		    <div class="sheet-npc-row" style="margin-top:2px;">
+            			<div class="sheet-row" style="margin-top:3px;">
+            			    <div class="sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            				<div class="sheet-col-1-3 sheet-center sheet-small-label sheet-vert-bottom">Nom de l'Arme</div>
+            			    <div class="sheet-col-1-13 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            			    <div class="sheet-col-1-4 sheet-center sheet-small-label sheet-vert-bottom">Type</div>
+            				
+            			</div>
+            			<div class="sheet-row" style="margin-left:24px;">
+            				<div class="sheet-col-3-7 sheet-center">
+            					<input type="text" class="sheet-center" name="attr_weap2">
+            				</div>
+            				<div class="sheet-col-1-3" style="margin-left:4px;">
+            					<select name="attr_weapType2">
+            						<option value="Fusil Automatique" selected="selected">Fusil Automatique</option>
+            						<option value="Pistolet-Mitrailleur">Pistolet-Mitrailleur</option>
+            						<option value="Fusil d'Éclaireur">Fusil d'Éclaireur</option>
+            						<option value="Fusil à Pompe">Fusil à Pompe</option>
+            						<option value="Fusil à Impulsion">Fusil à Impulsion</option>
+            						<option value="Fusil de Précision">Fusil de Précision</option>
+            						<option value="Pistolet">Pistolet</option>
+            						<option value="Revolver">Revolver</option>
+            						<option value="Fusil à Fusion">Fusil à Fusion</option>
+            						<option value="Épée">Épée</option>
+            						<option value="Lance-Grenades">Lance-Grenades</option>
+            						<option value="Mitrailleuse">Mitrailleuse</option>
+            						<option value="Lance-Roquettes">Lance-Roquettes</option>
+            						<option value="Arc">Arc</option>
+            					</select>
+            				</div>
+        					<div class="sheet-col-1-6 sheet-padr" style="margin-left:6px;margin-top:-31px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center" style="margin-left:-12px;">
+        						    <br/>Portée
+        							<input type="number" name="attr_weapRange2" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+            			</div>
+            			<div class="sheet-row" style="margin-left:-14px;margin-top:-10px;margin-bottom:-4px;">
+        					<div class="sheet-col-3-5 sheet-padr" style="margin-left:13px;">
+        						<div class="sheet-col-1-1 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center">
+        						    <br/>Dégâts de l'Arme<br/>
+            						<div class="sheet-col-1-7 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center" style="margin-left:-14px;margin-right:-14px;">
+            							<input type="text" name="attr_weapDamageBigNum2" step="1" style="text-align:center;">
+            						</div>
+            						<div class="sheet-col-1-4 sheet-vert-bottom sheet-padl sheet-center">
+                    					<select name="attr_weapDamageBig2">
+                    						<option value="d4cs5cf0" selected="selected">d4</option>
+                    						<option value="d6cs6cf0">d6</option>
+                    						<option value="d10cs10cf0">d10</option>
+                    						<option value="d20cs20cf0">d20</option>
+                    					</select>
+            						</div>
+            						<div class="sheet-col-2-3 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center" style="margin-left:-14px;">
+            							<input type="text" name="attr_weapDamageElse2" step="1" style="text-align:center;">
+            						</div>
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-left:-14px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Pénétra.
+        							<input type="number" name="attr_weapPene2" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-6 sheet-padr">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center" style="margin-left:-12px;">
+        						    <br/>Dég.Crit
+        							<input type="text" name="attr_weapCrit2" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+                        </div>
+                        <div class="sheet-row">
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Rareté
+                					<select name="attr_weapRarity2">
+                						<option value="weapon1" selected="selected">Usée</option>
+                						<option value="weapon2" style="color: #479cff;">Bonne Qualité</option>
+                						<option value="weapon" style="color: purple;">Qualité Exceptio.</option>
+                						<option value="spell" style="color: purple;font-weight:bold;">Chef d'Oeuvre</option>
+                						<option value="deathsave" style="color: orange;font-weight:bold;">Exotique</option>
+                						<option value="ability" style="color: green;font-weight:bold;">???</option>
+                						<option value="save" style="color: cyan;font-weight:bold;">???</option>
+                					</select>
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Chargeur
+        							<input type="number" name="attr_weapChar2" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Balles Res.
+        							<input type="number" name="attr_weapBallr2" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+            				<div class="sheet-col-1-5 sheet-center" style="margin-top:28px;">
+            					<button type="roll" class="sheet-roll-dmg" name="roll_WeapAttack2" value="&{template:5eDefault} {{@{weapRarity2}=1}} {{character_name=@{PC Macros|character_name}}} {{title=@{weap2}}} {{subheader=@{weapType2}}} {{attack=[[ @{weapDamageBigNum2}@{weapDamageBig2} ]]}} {{attackadv=[[@{weapDamageElse2}]]}} {{critdamage=[[@{weapCrit2}cs999cf0]]}} {{damage=@{weapPene2}}} {{rollname=Talent}} {{roll=@{weapPerk2}}} {{freetext=@{description2}}}">&nbsp;Dégâts</button>
+            				</div>
+            				
+            				<div class="sheet-col-1 sheet-padr" style="margin-top:7px;">
+        						<div class="sheet-row">
+        							<div class="sheet-col-1-10 sheet-padl sheet-small-label sheet-center">
+        								&nbsp;
+        							</div>
+        							<div class="sheet-col-1-4 sheet-padl sheet-small-label sheet-center">
+        								Nom du Talent
+        							</div>
+        							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-6px;">
+        								<input type="text" name="attr_weapPerk2" min="1" step="1">
+        							</div>
+        						</div>
+        					</div>
+            				
+        					<div class="sheet-col-1-1 sheet-padr">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+                					<textarea class="sheet-small-textarea" name="attr_description2"></textarea>
+        						</div>
+        					</div>
+            			</div>
+            		</div>
+            		
+           		    <div class="sheet-npc-row" style="margin-top:2px;">
+            			<div class="sheet-row" style="margin-top:3px;">
+            			    <div class="sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            				<div class="sheet-col-1-3 sheet-center sheet-small-label sheet-vert-bottom">Nom de l'Arme</div>
+            			    <div class="sheet-col-1-13 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            			    <div class="sheet-col-1-4 sheet-center sheet-small-label sheet-vert-bottom">Type</div>
+            				
+            			</div>
+            			<div class="sheet-row" style="margin-left:24px;">
+            				<div class="sheet-col-3-7 sheet-center">
+            					<input type="text" class="sheet-center" name="attr_weap3">
+            				</div>
+            				<div class="sheet-col-1-3" style="margin-left:4px;">
+            					<select name="attr_weapType3">
+            						<option value="Fusil Automatique" selected="selected">Fusil Automatique</option>
+            						<option value="Pistolet-Mitrailleur">Pistolet-Mitrailleur</option>
+            						<option value="Fusil d'Éclaireur">Fusil d'Éclaireur</option>
+            						<option value="Fusil à Pompe">Fusil à Pompe</option>
+            						<option value="Fusil à Impulsion">Fusil à Impulsion</option>
+            						<option value="Fusil de Précision">Fusil de Précision</option>
+            						<option value="Pistolet">Pistolet</option>
+            						<option value="Revolver">Revolver</option>
+            						<option value="Fusil à Fusion">Fusil à Fusion</option>
+            						<option value="Épée">Épée</option>
+            						<option value="Lance-Grenades">Lance-Grenades</option>
+            						<option value="Mitrailleuse">Mitrailleuse</option>
+            						<option value="Lance-Roquettes">Lance-Roquettes</option>
+            						<option value="Arc">Arc</option>
+            					</select>
+            				</div>
+        					<div class="sheet-col-1-6 sheet-padr" style="margin-left:6px;margin-top:-31px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center" style="margin-left:-12px;">
+        						    <br/>Portée
+        							<input type="number" name="attr_weapRange3" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+            			</div>
+            			<div class="sheet-row" style="margin-left:-14px;margin-top:-10px;margin-bottom:-4px;">
+        					<div class="sheet-col-3-5 sheet-padr" style="margin-left:13px;">
+        						<div class="sheet-col-1-1 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center">
+        						    <br/>Dégâts de l'Arme<br/>
+            						<div class="sheet-col-1-7 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center" style="margin-left:-14px;margin-right:-14px;">
+            							<input type="text" name="attr_weapDamageBigNum3" step="1" style="text-align:center;">
+            						</div>
+            						<div class="sheet-col-1-4 sheet-vert-bottom sheet-padl sheet-center">
+                    					<select name="attr_weapDamageBig3">
+                    						<option value="d4cs5cf0" selected="selected">d4</option>
+                    						<option value="d6cs6cf0">d6</option>
+                    						<option value="d10cs10cf0">d10</option>
+                    						<option value="d20cs20cf0">d20</option>
+                    					</select>
+            						</div>
+            						<div class="sheet-col-2-3 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center" style="margin-left:-14px;">
+            							<input type="text" name="attr_weapDamageElse3" step="1" style="text-align:center;">
+            						</div>
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-left:-14px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Pénétra.
+        							<input type="number" name="attr_weapPene3" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-6 sheet-padr">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center" style="margin-left:-12px;">
+        						    <br/>Dég.Crit
+        							<input type="text" name="attr_weapCrit3" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+                        </div>
+                        <div class="sheet-row">
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Rareté
+                					<select name="attr_weapRarity3">
+                						<option value="weapon1" selected="selected">Usée</option>
+                						<option value="weapon2" style="color: #479cff;">Bonne Qualité</option>
+                						<option value="weapon" style="color: purple;">Qualité Exceptio.</option>
+                						<option value="spell" style="color: purple;font-weight:bold;">Chef d'Oeuvre</option>
+                						<option value="deathsave" style="color: orange;font-weight:bold;">Exotique</option>
+                						<option value="ability" style="color: green;font-weight:bold;">???</option>
+                						<option value="save" style="color: cyan;font-weight:bold;">???</option>
+                					</select>
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Chargeur
+        							<input type="number" name="attr_weapChar3" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Balles Res.
+        							<input type="number" name="attr_weapBallr3" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+            				<div class="sheet-col-1-5 sheet-center" style="margin-top:28px;">
+            					<button type="roll" class="sheet-roll-dmg" name="roll_WeapAttack3" value="&{template:5eDefault} {{@{weapRarity3}=1}} {{character_name=@{PC Macros|character_name}}} {{title=@{weap3}}} {{subheader=@{weapType3}}} {{attack=[[ @{weapDamageBigNum3}@{weapDamageBig3} ]]}} {{attackadv=[[@{weapDamageElse3}]]}} {{critdamage=[[@{weapCrit3}cs999cf0]]}} {{damage=@{weapPene3}}} {{rollname=Talent}} {{roll=@{weapPerk3}}} {{freetext=@{description3}}}">&nbsp;Dégâts</button>
+            				</div>
+            				
+            				<div class="sheet-col-1 sheet-padr" style="margin-top:7px;">
+        						<div class="sheet-row">
+        							<div class="sheet-col-1-10 sheet-padl sheet-small-label sheet-center">
+        								&nbsp;
+        							</div>
+        							<div class="sheet-col-1-4 sheet-padl sheet-small-label sheet-center">
+        								Nom du Talent
+        							</div>
+        							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-6px;">
+        								<input type="text" name="attr_weapPerk3" min="1" step="1">
+        							</div>
+        						</div>
+        					</div>
+            				
+        					<div class="sheet-col-1-1 sheet-padr">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+                					<textarea class="sheet-small-textarea" name="attr_description3"></textarea>
+        						</div>
+        					</div>
+            			</div>
+            		</div>
+            		
+           		<div class="sheet-npc-row" style="margin-top:2px;">
+            			<div class="sheet-row" style="margin-top:3px;">
+            			    <div class="sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            				<div class="sheet-col-1-3 sheet-center sheet-small-label sheet-vert-bottom">Nom de l'Arme</div>
+            			    <div class="sheet-col-1-13 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            			    <div class="sheet-col-1-4 sheet-center sheet-small-label sheet-vert-bottom">Type</div>
+            				
+            			</div>
+            			<div class="sheet-row" style="margin-left:24px;">
+            				<div class="sheet-col-3-7 sheet-center">
+            					<input type="text" class="sheet-center" name="attr_weap4">
+            				</div>
+            				<div class="sheet-col-1-3" style="margin-left:4px;">
+            					<select name="attr_weapType4">
+            						<option value="Fusil Automatique" selected="selected">Fusil Automatique</option>
+            						<option value="Pistolet-Mitrailleur">Pistolet-Mitrailleur</option>
+            						<option value="Fusil d'Éclaireur">Fusil d'Éclaireur</option>
+            						<option value="Fusil à Pompe">Fusil à Pompe</option>
+            						<option value="Fusil à Impulsion">Fusil à Impulsion</option>
+            						<option value="Fusil de Précision">Fusil de Précision</option>
+            						<option value="Pistolet">Pistolet</option>
+            						<option value="Revolver">Revolver</option>
+            						<option value="Fusil à Fusion">Fusil à Fusion</option>
+            						<option value="Épée">Épée</option>
+            						<option value="Lance-Grenades">Lance-Grenades</option>
+            						<option value="Mitrailleuse">Mitrailleuse</option>
+            						<option value="Lance-Roquettes">Lance-Roquettes</option>
+            						<option value="Arc">Arc</option>
+            					</select>
+            				</div>
+        					<div class="sheet-col-1-6 sheet-padr" style="margin-left:6px;margin-top:-31px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center" style="margin-left:-12px;">
+        						    <br/>Portée
+        							<input type="number" name="attr_weapRange4" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+            			</div>
+            			<div class="sheet-row" style="margin-left:-14px;margin-top:-10px;margin-bottom:-4px;">
+        					<div class="sheet-col-3-5 sheet-padr" style="margin-left:13px;">
+        						<div class="sheet-col-1-1 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center">
+        						    <br/>Dégâts de l'Arme<br/>
+            						<div class="sheet-col-1-7 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center" style="margin-left:-14px;margin-right:-14px;">
+            							<input type="text" name="attr_weapDamageBigNum4" step="1" style="text-align:center;">
+            						</div>
+            						<div class="sheet-col-1-4 sheet-vert-bottom sheet-padl sheet-center">
+                    					<select name="attr_weapDamageBig4">
+                    						<option value="d4cs5cf0" selected="selected">d4</option>
+                    						<option value="d6cs6cf0">d6</option>
+                    						<option value="d10cs10cf0">d10</option>
+                    						<option value="d20cs20cf0">d20</option>
+                    					</select>
+            						</div>
+            						<div class="sheet-col-2-3 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center" style="margin-left:-14px;">
+            							<input type="text" name="attr_weapDamageElse4" step="1" style="text-align:center;">
+            						</div>
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-left:-14px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Pénétra.
+        							<input type="number" name="attr_weapPene4" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-6 sheet-padr">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center" style="margin-left:-12px;">
+        						    <br/>Dég.Crit
+        							<input type="text" name="attr_weapCrit4" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+                        </div>
+                        <div class="sheet-row">
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Rareté
+                					<select name="attr_weapRarity4">
+                						<option value="weapon1" selected="selected">Usée</option>
+                						<option value="weapon2" style="color: #479cff;">Bonne Qualité</option>
+                						<option value="weapon" style="color: purple;">Qualité Exceptio.</option>
+                						<option value="spell" style="color: purple;font-weight:bold;">Chef d'Oeuvre</option>
+                						<option value="deathsave" style="color: orange;font-weight:bold;">Exotique</option>
+                						<option value="ability" style="color: green;font-weight:bold;">???</option>
+                						<option value="save" style="color: cyan;font-weight:bold;">???</option>
+                					</select>
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Chargeur
+        							<input type="number" name="attr_weapChar4" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-5 sheet-padr" style="margin-top:0px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Balles Res.
+        							<input type="number" name="attr_weapBallr4" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+            				<div class="sheet-col-1-5 sheet-center" style="margin-top:28px;">
+            					<button type="roll" class="sheet-roll-dmg" name="roll_WeapAttack4" value="&{template:5eDefault} {{@{weapRarity4}=1}} {{character_name=@{PC Macros|character_name}}} {{title=@{weap4}}} {{subheader=@{weapType4}}} {{attack=[[ @{weapDamageBigNum4}@{weapDamageBig4} ]]}} {{attackadv=[[@{weapDamageElse4}]]}} {{critdamage=[[@{weapCrit4}cs999cf0]]}} {{damage=@{weapPene4}}} {{rollname=Talent}} {{roll=@{weapPerk4}}} {{freetext=@{description4}}}">&nbsp;Dégâts</button>
+            				</div>
+            				
+            				<div class="sheet-col-1 sheet-padr" style="margin-top:7px;">
+        						<div class="sheet-row">
+        							<div class="sheet-col-1-10 sheet-padl sheet-small-label sheet-center">
+        								&nbsp;
+        							</div>
+        							<div class="sheet-col-1-4 sheet-padl sheet-small-label sheet-center">
+        								Nom du Talent
+        							</div>
+        							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-top:-6px;">
+        								<input type="text" name="attr_weapPerk4" min="1" step="1">
+        							</div>
+        						</div>
+        					</div>
+            				
+        					<div class="sheet-col-1-1 sheet-padr">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+                					<textarea class="sheet-small-textarea" name="attr_description4"></textarea>
+        						</div>
+        					</div>
+            			</div>
+            		</div>
+            		
+					<h4 class="sheet-center" style="margin-top:20px;">Armes de Corps à Corps</h4>
+            		<div class="sheet-npc-row" style="margin-top:2px;">
+            			<div class="sheet-row" style="margin-top:3px;">
+            			    <div class="sheet-col-1-15 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            				<div class="sheet-col-1-2 sheet-center sheet-small-label sheet-vert-bottom">Nom de l'Arme</div>
+            			    <div class="sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            			    <div class="sheet-col-1-4 sheet-center sheet-small-label sheet-vert-bottom">Pénétration</div>
+            			</div>
+            			<div class="sheet-row">
+            			    <div class="sheet-col-1-20 sheet-center">
+            					&nbsp;
+            				</div>
+            				<div class="sheet-col-1-2 sheet-center">
+            					<input type="text" class="sheet-center" name="attr_cacweap1">
+            				</div>
+            				<div class="sheet-col-1-7 sheet-center">
+            					&nbsp;
+            				</div>
+            				<div class="sheet-col-1-5 sheet-center">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+                                    <input type="number" class="sheet-center" name="attr_cacweappen1">
+        						</div>
+        					</div>
+            			</div>
+            			<div class="sheet-row">
+        					<div class="sheet-col-1-22 sheet-padr" style="margin-top:-8px;">
+        						&nbsp;
+        					</div>
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:-8px;">
+        						<div class="sheet-col-1-1 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center">
+        						    <br/>Dégâts de l'Arme
+        							<input type="text" name="attr_cacweapdamage1" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-4 sheet-padr" style="margin-top:-8px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Portée (L.)
+        							<input type="number" name="attr_cacweaprange1" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:-8px;margin-bottom:5px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Rareté
+                					<select name="attr_cacweaprarity1">
+                						<option value="(Normal Action) " selected="selected">Usée</option>
+                						<option value="(Bonus Action) " style="color: #479cff;">Bonne Qualité</option>
+                						<option value="(Reaction) " style="color: purple;">Qualité Exceptio.</option>
+                						<option value="(Lair Action) " style="color: purple;font-weight:bold;">Chef d'oeuvre</option>
+                						<option value="(Legendary Action) " style="color: orange;font-weight:bold;">Exotique</option>
+                						<option value="(Special Action) " style="color: green;font-weight:bold;">???</option>
+                						<option value="(Special Action2) " style="color: cyan;font-weight:bold;">???</option>
+                					</select>
+        						</div>
+        					</div>
+                        </div>
+            		</div>
+					
+            		<div class="sheet-npc-row" style="margin-top:2px;">
+            			<div class="sheet-row" style="margin-top:3px;">
+            			    <div class="sheet-col-1-15 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            				<div class="sheet-col-1-2 sheet-center sheet-small-label sheet-vert-bottom">Nom de l'Arme</div>
+            			    <div class="sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            			    <div class="sheet-col-1-4 sheet-center sheet-small-label sheet-vert-bottom">Pénétration</div>
+            			</div>
+            			<div class="sheet-row">
+            			    <div class="sheet-col-1-20 sheet-center">
+            					&nbsp;
+            				</div>
+            				<div class="sheet-col-1-2 sheet-center">
+            					<input type="text" class="sheet-center" name="attr_cacweap2">
+            				</div>
+            				<div class="sheet-col-1-7 sheet-center">
+            					&nbsp;
+            				</div>
+            				<div class="sheet-col-1-5 sheet-center">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+                                    <input type="number" class="sheet-center" name="attr_cacweappen2">
+        						</div>
+        					</div>
+            			</div>
+            			<div class="sheet-row">
+        					<div class="sheet-col-1-22 sheet-padr" style="margin-top:-8px;">
+        						&nbsp;
+        					</div>
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:-8px;">
+        						<div class="sheet-col-1-1 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center">
+        						    <br/>Dégâts de l'Arme
+        							<input type="text" name="attr_cacweapdamage2" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-4 sheet-padr" style="margin-top:-8px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Portée (L.)
+        							<input type="number" name="attr_cacweaprange2" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:-8px;margin-bottom:5px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Rareté
+                					<select name="attr_cacweaprarity2">
+                						<option value="(Normal Action) " selected="selected">Usée</option>
+                						<option value="(Bonus Action) " style="color: #479cff;">Bonne Qualité</option>
+                						<option value="(Reaction) " style="color: purple;">Qualité Exceptio.</option>
+                						<option value="(Lair Action) " style="color: purple;font-weight:bold;">Chef d'oeuvre</option>
+                						<option value="(Legendary Action) " style="color: orange;font-weight:bold;">Exotique</option>
+                						<option value="(Special Action) " style="color: green;font-weight:bold;">???</option>
+                						<option value="(Special Action2) " style="color: cyan;font-weight:bold;">???</option>
+                					</select>
+        						</div>
+        					</div>
+                        </div>
+            		</div>
+            		
+            		<div class="sheet-npc-row" style="margin-top:2px;">
+            			<div class="sheet-row" style="margin-top:3px;">
+            			    <div class="sheet-col-1-15 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            				<div class="sheet-col-1-2 sheet-center sheet-small-label sheet-vert-bottom">Nom de l'Arme</div>
+            			    <div class="sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            			    <div class="sheet-col-1-4 sheet-center sheet-small-label sheet-vert-bottom">Pénétration</div>
+            			</div>
+            			<div class="sheet-row">
+            			    <div class="sheet-col-1-20 sheet-center">
+            					&nbsp;
+            				</div>
+            				<div class="sheet-col-1-2 sheet-center">
+            					<input type="text" class="sheet-center" name="attr_cacweap3">
+            				</div>
+            				<div class="sheet-col-1-7 sheet-center">
+            					&nbsp;
+            				</div>
+            				<div class="sheet-col-1-5 sheet-center">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+                                    <input type="number" class="sheet-center" name="attr_cacweappen3">
+        						</div>
+        					</div>
+            			</div>
+            			<div class="sheet-row">
+        					<div class="sheet-col-1-22 sheet-padr" style="margin-top:-8px;">
+        						&nbsp;
+        					</div>
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:-8px;">
+        						<div class="sheet-col-1-1 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center">
+        						    <br/>Dégâts de l'Arme
+        							<input type="text" name="attr_cacweapdamage3" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-4 sheet-padr" style="margin-top:-8px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Portée (L.)
+        							<input type="number" name="attr_cacweaprange3" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:-8px;margin-bottom:5px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Rareté
+                					<select name="attr_cacweaprarity3">
+                						<option value="(Normal Action) " selected="selected">Usée</option>
+                						<option value="(Bonus Action) " style="color: #479cff;">Bonne Qualité</option>
+                						<option value="(Reaction) " style="color: purple;">Qualité Exceptio.</option>
+                						<option value="(Lair Action) " style="color: purple;font-weight:bold;">Chef d'oeuvre</option>
+                						<option value="(Legendary Action) " style="color: orange;font-weight:bold;">Exotique</option>
+                						<option value="(Special Action) " style="color: green;font-weight:bold;">???</option>
+                						<option value="(Special Action2) " style="color: cyan;font-weight:bold;">???</option>
+                					</select>
+        						</div>
+        					</div>
+                        </div>
+            		</div>
+            		
+            		<div class="sheet-npc-row" style="margin-top:2px;">
+            			<div class="sheet-row" style="margin-top:3px;">
+            			    <div class="sheet-col-1-15 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            				<div class="sheet-col-1-2 sheet-center sheet-small-label sheet-vert-bottom">Nom de l'Arme</div>
+            			    <div class="sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">&nbsp;</div>
+            			    <div class="sheet-col-1-4 sheet-center sheet-small-label sheet-vert-bottom">Pénétration</div>
+            			</div>
+            			<div class="sheet-row">
+            			    <div class="sheet-col-1-20 sheet-center">
+            					&nbsp;
+            				</div>
+            				<div class="sheet-col-1-2 sheet-center">
+            					<input type="text" class="sheet-center" name="attr_cacweap4">
+            				</div>
+            				<div class="sheet-col-1-7 sheet-center">
+            					&nbsp;
+            				</div>
+            				<div class="sheet-col-1-5 sheet-center">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+                                    <input type="number" class="sheet-center" name="attr_cacweappen4">
+        						</div>
+        					</div>
+            			</div>
+            			<div class="sheet-row">
+        					<div class="sheet-col-1-22 sheet-padr" style="margin-top:-8px;">
+        						&nbsp;
+        					</div>
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:-8px;">
+        						<div class="sheet-col-1-1 sheet-small-label sheet-vert-bottom sheet-padl sheet-small-label sheet-center">
+        						    <br/>Dégâts de l'Arme
+        							<input type="text" name="attr_cacweapdamage4" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-4 sheet-padr" style="margin-top:-8px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Portée (L.)
+        							<input type="number" name="attr_cacweaprange4" step="1" style="text-align:center;">
+        						</div>
+        					</div>
+        					<div class="sheet-col-1-3 sheet-padr" style="margin-top:-8px;margin-bottom:5px;">
+        						<div class="sheet-col-1-1 sheet-padl sheet-small-label sheet-center">
+        						    <br/>Rareté
+                					<select name="attr_cacweaprarity4">
+                						<option value="(Normal Action) " selected="selected">Usée</option>
+                						<option value="(Bonus Action) " style="color: #479cff;">Bonne Qualité</option>
+                						<option value="(Reaction) " style="color: purple;">Qualité Exceptio.</option>
+                						<option value="(Lair Action) " style="color: purple;font-weight:bold;">Chef d'oeuvre</option>
+                						<option value="(Legendary Action) " style="color: orange;font-weight:bold;">Exotique</option>
+                						<option value="(Special Action) " style="color: green;font-weight:bold;">???</option>
+                						<option value="(Special Action2) " style="color: cyan;font-weight:bold;">???</option>
+                					</select>
+        						</div>
+        					</div>
+                        </div>
+            		</div>
+            	</div>
+				
+				<div class="sheet-col-1-2 sheet-padr">
+					<h4 class="sheet-center">Munitions</h4>
+				    <!-- Munitions Classiques -->
+					<div class="sheet-row">
+						<div class="sheet-col-1-18">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-3">
+							<input type="text" name="attr_conn1" value="Munitions Classiques" style="text-align:center;" readonly/>
+						</div>
+						<div class="sheet-col-1-23">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-right:1px;">
+							<input type="checkbox" name="attr_classi1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi3" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi4" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi5" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi6" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi7" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi8" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi9" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi10" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi11" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi12" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi13" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-23 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_classi14" value="@{PB}" />
+						</div>
+					</div>
+				    <!-- Munitions Spéciales -->
+					<div class="sheet-row">
+						<div class="sheet-col-1-18">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-3">
+							<input type="text" name="attr_conn1" value="Munitions Spéciales" style="text-align:center;color:white;background-color:green;" readonly/>
+						</div>
+						<div class="sheet-col-1-20">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-16 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_speci1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-16 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_speci2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-16 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_speci3" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-16 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_speci4" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-16 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_speci5" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-16 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_speci6" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-16 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_speci7" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-16 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_speci8" value="@{PB}" />
+						</div>
+					</div>
+				    <!-- Munitions Lourdes -->
+					<div class="sheet-row" style="margin-bottom:10px;">
+						<div class="sheet-col-1-18">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-3">
+							<input type="text" name="attr_conn1" value="Munitions Lourdes" style="text-align:center;color:white;background-color:purple;font-weight:bold;" readonly/>
+						</div>
+						<div class="sheet-col-1-20">
+							&nbsp;
+						</div>
+						<div class="sheet-col-1-11 sheet-vert-middle sheet-checkbox-row">
+							<input type="checkbox" name="attr_loudes1" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-11 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_loudes2" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-11 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_loudes3" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-11 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_loudes4" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-11 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_loudes5" value="@{PB}" />
+						</div>
+						<div class="sheet-col-1-11 sheet-vert-middle sheet-checkbox-row" style="margin-left:-3px;">
+							<input type="checkbox" name="attr_loudes6" value="@{PB}" />
+						</div>
+					</div>
+				    <h4 class="sheet-center" style"margin-top:29px;">Armure</h4>
+					<div class="sheet-col-1-1 sheet-padr">
+					    
+						<div class="sheet-row">
+							<div class="sheet-col-3-5 sheet-padl sheet-small-label sheet-center" style="margin-left:-44px;">
+								<img src="https://www.destinyjdr.com/img/titan.png" style="margin-top:6px;padding:-20px;overflow: hidden;text-align:center;max-width:105%;">
+							</div>
+						</div>
+					    
+						<div class="sheet-row" style="margin-top:-390px;">
+							<div class="sheet-col-3-5 sheet-padl sheet-small-label sheet-center" style="margin-left:-44px;">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-left:-54px;">
+								<input class="sheet-underlined" type="text" name="attr_armorname1" min="1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-7 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_armornb1" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+						
+						<div class="sheet-row">
+							<div class="sheet-col-4-9 sheet-padl sheet-small-label sheet-center" style="margin-left:-46px;">
+								&nbsp;
+							</div>
+							<div class="sheet-col-2-3 sheet-padl sheet-small-label sheet-center">
+                				<div class="sheet-padl sheet-small-label sheet-center">
+                        			<textarea class="sheet-normal-textarea" name="attr_armordescription1"></textarea>
+                				</div>
+							</div>
+						</div>
+						
+						<div class="sheet-row">
+							<div class="sheet-col-3-5 sheet-padl sheet-small-label sheet-center" style="margin-left:-44px;">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-left:-54px;">
+								<input class="sheet-underlined" type="text" name="attr_armorname2" min="1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-7 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_armornb2" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+						
+						<div class="sheet-row">
+							<div class="sheet-col-4-9 sheet-padl sheet-small-label sheet-center" style="margin-left:-46px;">
+								&nbsp;
+							</div>
+							<div class="sheet-col-2-3 sheet-padl sheet-small-label sheet-center">
+                				<div class="sheet-padl sheet-small-label sheet-center">
+                        			<textarea class="sheet-normal-textarea" name="attr_armordescription2"></textarea>
+                				</div>
+							</div>
+						</div>
+						
+						<div class="sheet-row">
+							<div class="sheet-col-3-5 sheet-padl sheet-small-label sheet-center" style="margin-left:-44px;">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-left:-54px;">
+								<input class="sheet-underlined" type="text" name="attr_armorname3" min="1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-7 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_armornb3" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+						
+						<div class="sheet-row">
+							<div class="sheet-col-4-9 sheet-padl sheet-small-label sheet-center" style="margin-left:-46px;">
+								&nbsp;
+							</div>
+							<div class="sheet-col-2-3 sheet-padl sheet-small-label sheet-center">
+                				<div class="sheet-padl sheet-small-label sheet-center">
+                        			<textarea class="sheet-normal-textarea" name="attr_armordescription3"></textarea>
+                				</div>
+							</div>
+						</div>
+						
+						<div class="sheet-row">
+							<div class="sheet-col-3-5 sheet-padl sheet-small-label sheet-center" style="margin-left:-44px;">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-left:-54px;">
+								<input class="sheet-underlined" type="text" name="attr_armorname4" min="1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-7 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_armornb4" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+						
+						<div class="sheet-row">
+							<div class="sheet-col-4-9 sheet-padl sheet-small-label sheet-center" style="margin-left:-46px;">
+								&nbsp;
+							</div>
+							<div class="sheet-col-2-3 sheet-padl sheet-small-label sheet-center">
+                				<div class="sheet-padl sheet-small-label sheet-center">
+                        			<textarea class="sheet-normal-textarea" name="attr_armordescription4"></textarea>
+                				</div>
+							</div>
+						</div>
+						
+						<div class="sheet-row">
+							<div class="sheet-col-3-5 sheet-padl sheet-small-label sheet-center" style="margin-left:-44px;">
+								&nbsp;
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center" style="margin-left:-54px;">
+								<input class="sheet-underlined" type="text" name="attr_armorname5" min="1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-7 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="number" name="attr_armornb5" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+						
+					</div>
+
+
+
+
+				    <h4 class="sheet-center" style"margin-top:29px;">Inventaire</h4>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv1" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv2" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv3" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv4" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv5" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv6" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv7" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv8" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv9" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv10" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv11" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv12" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv13" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv14" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv15" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv16" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv17" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv18" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv19" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv20" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv21" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv22" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv23" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv24" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv25" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv26" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv27" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv28" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv29" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv30" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="sheet-col-1-1 sheet-padr">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv31" step="1">
+								<br/>
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<input class="sheet-underlined" type="text" name="attr_inv32" min="1" step="1">
+								<br/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sheet-section-background">
+		    <img src="https://destinyjdr.com/img/allegeance.png" style="margin:-30px;margin-top:1px;margin-bottom:0px;padding:-20px;overflow: hidden;text-align:center;max-width:105%;">
+			<div class="sheet-row">
+				<div class="sheet-col-1-3 sheet-padr">
+					<h4 class="sheet-center">Points de Lumière et Noirceur</h4>
+    				<div class="sheet-col-1 sheet-padr" style="margin-top:-12px;">
+						<div class="sheet-row">
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+								<br/>Points de Lumière
+								<input class="sheet-underlined" type="number" name="attr_Plumiere" step="1" style="color:#00e6e6;">
+							</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-small-label sheet-center">
+							    <br/>Points de Noirceur
+								<input class="sheet-underlined" type="number" name="attr_Pnoirceur" min="1" step="1" style="font-weight:bold;">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="sheet-col-2-3 sheet-padr">
+					<h4 class="sheet-center">Ascension</h4>
+					<div class="sheet-row sheet-sub-header">
+						<div class="sheet-col-1-2 sheet-center sheet-small-label">
+						    Voie de l'Espoir
+						</div>
+						<div class="sheet-col-1-2 sheet-center sheet-small-label">
+						    Voie du Malheur
+						</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="150" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir150" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="150" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur150" value="@{PB}" disabled/>
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="140" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir140" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="140" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur140" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="130" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir130" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="130" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur130" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="120" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir120" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="120" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur120" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="110" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir110" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="110" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur110" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="100" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir100" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="100" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur100" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="90" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir90" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="90" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur90" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="80" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir80" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="80" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur80" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="70" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir70" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="70" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur70" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="60" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir60" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="60" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur60" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="50" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir50" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="50" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur50" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="40" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir40" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="40" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur40" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+					<div class="sheet-row">
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="20" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_espoir20" value="@{PB}" />
+    						</div>
+    					</div>
+    					<div class="sheet-col-1-2">
+    						<div class="sheet-col-1-8">
+    							&nbsp;
+    						</div>
+    						<div class="sheet-col-1-2">
+    							<input type="text" name="attr_conn1" value="20" style="text-align:center;" readonly/>
+    						</div>
+    						<div class="sheet-col-1-8 sheet-vert-middle sheet-checkbox-row">
+    							<input type="checkbox" name="attr_malheur20" value="@{PB}" />
+    						</div>
+    					</div>
+					</div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sheet-row sheet-footer">
+		<div class="sheet-col-1 sheet-small-label sheet-center">Sheet help - https://wiki.roll20.net/DnD5e_Character_Sheet</div>
+	</div>
+  <script type="text/worker">
+
+    on("change:drop_category", function(eventinfo) {
+        if(eventinfo.newValue === "Monsters") {
+            handle_drop_monster(eventinfo.newValue);
+        }
+    });
+    
+  </script>
+</div>
+
+<input type="hidden" name="attr_classactioninitiative" value="@{CC} {{showclassactions=1}}" disabled="disabled">
+<rolltemplate class="sheet-rolltemplate-5eDefault">
+	<div class="sheet-rt-card">
+		<div class="sheet-rt-header{{#weapon}} sheet-weapon{{/weapon}}{{#spell}}  sheet-spell{{/spell}}{{#ability}} sheet-ability{{/ability}}{{#save}} sheet-save{{/save}}{{#deathsave}} sheet-deathsave{{/deathsave}}">
+			<div class="sheet-rt-title">{{title}}</div>
+			{{#subheader}}
+			<div class="sheet-rt-subheader">{{subheader}}{{#subheaderright}} &bullet; {{subheaderright}}{{/subheaderright}}</div>
+			{{/subheader}} {{#subheader2}}
+			<div class="sheet-rt-subheader">{{subheader2}}{{#subheaderright2}} &bullet; {{subheaderright2}}{{/subheaderright2}}</div>
+			{{/subheader2}}
+		</div>
+		{{#emote}}
+		<p class="sheet-rt-emote">{{character_name}} {{emote}}</p>
+		{{/emote}}
+		<div class="sheet-main-content">
+			<!--Weapon based attacks-->
+			{{#attack}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Dégâts</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{attack}}{{#attackadv}} | {{attackadv}}{{/attackadv}}</div>
+			</div>
+			{{/attack}} {{#damage}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Pénétration</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{damage}}</div>
+			</div>
+			{{/damage}} {{#rollWasCrit() attack}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{critdamage}}</div>
+			</div>
+			{{/rollWasCrit() attack}} {{#rollWasCrit() attackadv}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{critdamage}}</div>
+			</div>
+			{{/rollWasCrit() attackadv}}
+			<!--Spellcasting-->
+			{{#spellshowinfoblock}}
+			<div class="sheet-row sheet-padb">
+				<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-center sheet-border-right-dotted"><span class="sheet-rt-key">Class</span>
+					<br/><span class="sheet-rt-value">{{spellgainedfrom}}</span></div>
+				<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-center sheet-border-left-dotted"><span class="sheet-rt-key">Comp.</span>
+					<br/><span class="sheet-rt-value">{{spellcomponents}}</span></div>
+				<div class="sheet-col-1 sheet-border-top-dotted"></div>
+				<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-center sheet-border-right-dotted"><span class="sheet-rt-key">Cast Time</span>
+					<br/><span class="sheet-rt-value">{{spellcasttime}}</span></div>
+				<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-center sheet-border-left-dotted"><span class="sheet-rt-key">Duration</span>
+					<br/><span class="sheet-rt-value">{{spellduration}}</span></div>
+				<div class="sheet-col-1 sheet-border-top-dotted"></div>
+				<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-center sheet-border-right-dotted"><span class="sheet-rt-key">Target/AoE</span>
+					<br/><span class="sheet-rt-value">{{spelltarget}}</span></div>
+				<div class="sheet-col-1-2 sheet-padl sheet-padr sheet-center sheet-border-left-dotted"><span class="sheet-rt-key">Range</span>
+					<br/><span class="sheet-rt-value">{{spellrange}}</span></div>
+			</div>
+			{{/spellshowinfoblock}} {{#spellshowattack}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Attack</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{spellattack}}{{#spellshowattackadv}} | {{spellattackadv}}{{/spellshowattackadv}} vs AC</div>
+			</div>
+			{{/spellshowattack}} {{#spellshowsavethrow}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Save</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">DC {{spellsavedc}} {{spellsavestat}}</div>
+			</div>
+			{{/spellshowsavethrow}} {{#spellshowhealing}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Healing</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{spellhealing}} HP healed</div>
+			</div>
+			{{/spellshowhealing}} {{#spellshowdamage}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Damage</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{spelldamage}}</div>
+			</div>
+			{{/spellshowdamage}} {{#spellcancrit}} {{#spellshowattack}} {{#rollWasCrit() spellattack}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{spellcritdamage}}</div>
+			</div>
+			{{/rollWasCrit() spellattack}} {{#rollWasCrit() spellattackadv}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit (adv roll)</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{spellcritdamage}} (if attack was made with advantage)</div>
+			</div>
+			{{/rollWasCrit() spellattackadv}} {{/spellshowattack}} {{/spellcancrit}} {{#spellshoweffects}}
+			<div class="sheet-row">
+				<div class="sheet-col-1 sheet-padl sheet-padr sheet-rt-key">Effect</div>
+				<div class="sheet-col-1 sheet-padl sheet-padr sheet-rt-value">{{spelleffect}}</div>
+			</div>
+			{{/spellshoweffects}} {{#spellshowsavethrow}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Save success</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{spellsavesuccess}}</div>
+			</div>
+			{{/spellshowsavethrow}} {{#spellshowdesc}}
+			<div class="sheet-row">
+				<div class="sheet-col-1 sheet-padl sheet-padr sheet-rt-key">Spell Description</div>
+				<div class="sheet-col-1 sheet-padl sheet-padr sheet-rt-value">{{spelldescription}}</div>
+			</div>
+			{{/spellshowdesc}} {{#spellshowhigherlvl}}
+			<div class="sheet-row">
+				<div class="sheet-col-1 sheet-padl sheet-padr sheet-rt-key">At Higher Levels</div>
+				<div class="sheet-col-1 sheet-padl sheet-padr sheet-rt-value">{{spellhigherlevel}}</div>
+			</div>
+			{{/spellshowhigherlvl}}
+			<!--NPC-->
+			{{#npccorestats}}
+			<div class="sheet-row">
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-key">Stat</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-key">Score</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-key">Mod</div>
+			</div>
+			<div class="sheet-row">
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">STR</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_strength}}</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_strength_mod}}</div>
+			</div>
+			<div class="sheet-row">
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">DEX</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_dexterity}}</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_dexterity_mod}}</div>
+			</div>
+			<div class="sheet-row">
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">CON</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_constitution}}</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_constitution_mod}}</div>
+			</div>
+			<div class="sheet-row">
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">INT</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_intelligence}}</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_intelligence_mod}}</div>
+			</div>
+			<div class="sheet-row">
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">WIS</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_wisdom}}</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_wisdom_mod}}</div>
+			</div>
+			<div class="sheet-row">
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">CHA</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_charisma}}</div>
+				<div class="sheet-col-1-3 sheet-padl sheet-padr sheet-rt-value">{{npc_charisma_mod}}</div>
+			</div>
+			{{/npccorestats}} {{#npctraits}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Dmg Resistance</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{npc_damage_resistance}}</div>
+			</div>
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Dmg Vuln.</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{npc_damage_vulnerability}}</div>
+			</div>
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Dmg Immunity</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{npc_damage_immunity}}</div>
+			</div>
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Condition Immunity</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{npc_condition_immunity}}</div>
+			</div>
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Other Traits</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{npc_traits}}</div>
+			</div>
+			{{/npctraits}} {{#npcaction}} {{#npc_showmultiattack}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Multi Attack</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{npc_multiattack}}</div>
+			</div>
+			{{/npc_showmultiattack}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Desc.</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{npc_action_description}}</div>
+			</div>
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Effect</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{npc_action_effect}}</div>
+			</div>
+			{{/npcaction}}
+			<!--Generic section-->
+			{{#freetext}}
+			<div class="sheet-row">
+				<div class="sheet-col-1 sheet-padl sheet-padr sheet-rt-key-wide">{{freetextname}}</div>
+				<div class="sheet-col-1 sheet-padl sheet-padr sheet-rt-value">{{freetext}}</div>
+			</div>
+			{{/freetext}} {{#roll}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">{{rollname}}</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{roll}}{{#rolladv}} | {{rolladv}}{{/rolladv}}</div>
+			</div>
+			{{/roll}}
+			<!-- START roll option templates -->
+			<!--Simple roll (such as save/skill check or weapon attack)-->
+			{{#simple}} {{#rollhasadv}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Roll type</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">With advantage</div>
+			</div>
+			{{/rollhasadv}} {{#rollhasdisadv}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Roll type</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">With disadvantage</div>
+			</div>
+			{{/rollhasdisadv}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">{{rollname}}</div>
+				{{#noadvroll}}
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{roll1}}</div>
+				{{/noadvroll}} {{#showadvroll}}
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{roll1}} | {{roll2}}</div>
+				{{/showadvroll}} {{#rollhasadv}} {{#rollTotal() roll1 roll2}}
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{roll1}} | <span class="sheet-ignored-roll">{{roll2}}</span></div>{{/rollTotal() roll1 roll2}} {{#rollGreater() roll1 roll2}}
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{roll1}} | <span class="sheet-ignored-roll">{{roll2}}</span></div>{{/rollGreater() roll1 roll2}} {{#rollGreater() roll2 roll1}}
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value"><span class="sheet-ignored-roll">{{roll1}}</span> | {{roll2}}</div>{{/rollGreater() roll2 roll1}} {{/rollhasadv}} {{#rollhasdisadv}} {{#rollTotal() roll1 roll2}}
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{roll1}} | <span class="sheet-ignored-roll">{{roll2}}</span></div>{{/rollTotal() roll1 roll2}} {{#rollLess() roll1 roll2}}
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{roll1}} | <span class="sheet-ignored-roll">{{roll2}}</span></div>{{/rollLess() roll1 roll2}} {{#rollLess() roll2 roll1}}
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value"><span class="sheet-ignored-roll">{{roll1}}</span> | {{roll2}}</div>{{/rollLess() roll2 roll1}} {{/rollhasdisadv}}
+			</div>
+			{{#weapondamage}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Talent</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{weapondamage}}</div>
+			</div>
+			{{/weapondamage}} {{#weapon}} {{#noadvroll}} {{#rollWasCrit() roll1}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{weaponcritdamage}}</div>
+			</div>
+			{{/rollWasCrit() roll1}} {{/noadvroll}} {{#showadvroll}} {{#rollWasCrit() roll1}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{weaponcritdamage}}</div>
+			</div>
+			{{/rollWasCrit() roll1}} {{#rollWasCrit() roll2}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit (adv roll)</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{weaponcritdamage}}</div>
+			</div>
+			{{/rollWasCrit() roll2}} {{/showadvroll}} {{#rollhasadv}} {{#rollGreater() roll1 roll2}} {{#rollWasCrit() roll1}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{weaponcritdamage}}</div>
+			</div>
+			{{/rollWasCrit() roll1}} {{/rollGreater() roll1 roll2}} {{#rollGreater() roll2 roll1}} {{#rollWasCrit() roll2}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{weaponcritdamage}}</div>
+			</div>
+			{{/rollWasCrit() roll2}} {{/rollGreater() roll2 roll1}} {{#rollTotal() roll1 roll2}} {{#rollWasCrit() roll1}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{weaponcritdamage}}</div>
+			</div>
+			{{/rollWasCrit() roll1}} {{/rollTotal() roll1 roll2}} {{/rollhasadv}} {{#rollhasdisadv}} {{#rollLess() roll1 roll2}} {{#rollWasCrit() roll1}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{weaponcritdamage}}</div>
+			</div>
+			{{/rollWasCrit() roll1}} {{/rollLess() roll1 roll2}} {{#rollLess() roll2 roll1}} {{#rollWasCrit() roll2}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{weaponcritdamage}}</div>
+			</div>
+			{{/rollWasCrit() roll2}} {{/rollLess() roll2 roll1}} {{#rollTotal() roll1 roll2}} {{#rollWasCrit() roll1}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{weaponcritdamage}}</div>
+			</div>
+			{{/rollWasCrit() roll1}} {{/rollTotal() roll1 roll2}} {{/rollhasdisadv}} {{/weapon}} {{#math}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Math</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value sheet-no-roll-highlight">{{math}}</div>
+			</div>
+			{{/math}} {{/simple}}
+			<!-- END roll option templates -->
+			<!-- Class action additions -->
+			{{#showclassactions}} {{#allprops() showclassactions character_name save title subheader subheaderright subheader2 subheaderright2 rollname roll rolladv emote deathsave weapon attack attackadv damage critdamage spell spellshowinfoblock spellshowdesc spelldescription spellshowhigherlvl spellhigherlevel spellshowattack spellattack spellshowattackadv spellattackadv spellshowsavethrow spellsavedc spellsavestat spellsavesuccess spellshowhealing spellhealing spellshowdamage spelldamage spellcancrit spellcritdamage spellshoweffects spelleffect spellcasttime spellduration spelltarget spellrange spellgainedfrom spellcomponents ability roll1 roll2 simple showadvroll noadvroll rollhasadv rollhasdisadv math weapondamage weaponcritdamage debug}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">{{key}}</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{value}}</div>
+			</div>
+			{{/allprops() showclassactions character_name save title subheader subheaderright subheader2 subheaderright2 rollname roll rolladv emote deathsave weapon attack attackadv damage critdamage spell spellshowinfoblock spellshowdesc spelldescription spellshowhigherlvl spellhigherlevel spellshowattack spellattack spellshowattackadv spellattackadv spellshowsavethrow spellsavedc spellsavestat spellsavesuccess spellshowhealing spellhealing spellshowdamage spelldamage spellcancrit spellcritdamage spellshoweffects spelleffect spellcasttime spellduration spelltarget spellrange spellgainedfrom spellcomponents ability roll1 roll2 simple showadvroll noadvroll rollhasadv rollhasdisadv math weapondamage weaponcritdamage debug}} {{/showclassactions}}
+			<!--Multi attack-->
+			{{#multiattack}}
+			<!--Attack 1-->
+			{{#mattack1}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Attack1</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mattack1}}{{#mattack1adv}} | {{mattack1adv}}{{/mattack1adv}} vs AC</div>
+			</div>
+			{{/mattack1}} {{#mdamage1}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Damage1</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mdamage1}}</div>
+			</div>
+			{{/mdamage1}} {{#rollWasCrit() mattack1}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit1</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mcritdamage1}}</div>
+			</div>
+			{{/rollWasCrit() mattack1}} {{#rollWasCrit() mattack1adv}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit1 (adv roll)</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mcritdamage1}} (if attack was made with advantage)</div>
+			</div>
+			{{/rollWasCrit() mattack1adv}}
+			<!--Attack 2-->
+			{{#mattack2}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Attack2</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mattack2}}{{#mattack2adv}} | {{mattack2adv}}{{/mattack2adv}} vs AC</div>
+			</div>
+			{{/mattack2}} {{#mdamage2}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Damage2</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mdamage2}}</div>
+			</div>
+			{{/mdamage2}} {{#rollWasCrit() mattack2}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit2</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mcritdamage2}}</div>
+			</div>
+			{{/rollWasCrit() mattack2}} {{#rollWasCrit() mattack2adv}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit2 (adv roll)</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mcritdamage2}} (if attack was made with advantage)</div>
+			</div>
+			{{/rollWasCrit() mattack2adv}}
+			<!--Attack 3-->
+			{{#mattack3}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Attack3</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mattack3}}{{#mattack3adv}} | {{mattack3adv}}{{/mattack3adv}} vs AC</div>
+			</div>
+			{{/mattack3}} {{#mdamage3}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Damage3</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mdamage3}}</div>
+			</div>
+			{{/mdamage3}} {{#rollWasCrit() mattack3}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit3</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mcritdamage3}}</div>
+			</div>
+			{{/rollWasCrit() mattack3}} {{#rollWasCrit() mattack3adv}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit3 (adv roll)</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mcritdamage3}} (if attack was made with advantage)</div>
+			</div>
+			{{/rollWasCrit() mattack3adv}}
+			<!--Attack 4-->
+			{{#mattack4}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Attack4</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mattack4}}{{#mattack4adv}} | {{mattack4adv}}{{/mattack4adv}} vs AC</div>
+			</div>
+			{{/mattack4}} {{#mdamage4}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Damage4</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mdamage4}}</div>
+			</div>
+			{{/mdamage4}} {{#rollWasCrit() mattack4}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit4</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mcritdamage4}}</div>
+			</div>
+			{{/rollWasCrit() mattack4}} {{#rollWasCrit() mattack4adv}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit4 (adv roll)</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mcritdamage4}} (if attack was made with advantage)</div>
+			</div>
+			{{/rollWasCrit() mattack4adv}}
+			<!--Attack 5-->
+			{{#mattack5}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Attack5</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mattack5}}{{#mattack5adv}} | {{mattack5adv}}{{/mattack5adv}} vs AC</div>
+			</div>
+			{{/mattack5}} {{#mdamage5}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Damage5</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mdamage5}}</div>
+			</div>
+			{{/mdamage5}} {{#rollWasCrit() mattack5}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit5</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mcritdamage5}}</div>
+			</div>
+			{{/rollWasCrit() mattack5}} {{#rollWasCrit() mattack5adv}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">Crit5 (adv roll)</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{mcritdamage5}} (if attack was made with advantage)</div>
+			</div>
+			{{/rollWasCrit() mattack5adv}} {{/multiattack}}
+			<!--Outputall-->
+			{{#outputall}} {{#allprops() outputall title subheader subheaderright subheader2 subheaderright2 emote weapon spell ability save deathsave}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">{{key}}</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{value}}</div>
+			</div>
+			{{/allprops() outputall title subheader subheaderright subheader2 subheaderright2 emote weapon spell ability save deathsave}} {{/outputall}}
+			<!--DEBUG-->
+			{{#debug}} {{#allprops()}}
+			<div class="sheet-row">
+				<div class="sheet-col-5-12 sheet-padl sheet-padr sheet-rt-key">{{key}} (DEBUG)</div>
+				<div class="sheet-col-7-12 sheet-padr sheet-rt-value">{{value}}</div>
+			</div>
+			{{/allprops()}} {{/debug}}
+		</div>
+	</div>
+</rolltemplate>
